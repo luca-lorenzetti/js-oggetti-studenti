@@ -18,7 +18,7 @@ $(function(){
     // 2. Ciclo per stampare proprietà dell'oggetto studente
     console.log("PROPRIETA' STUDENTE: \n");
 
-    for ( key in studente) {
+    for (let key in studente) {
         console.log(key+"\n");
     }
 
@@ -49,7 +49,7 @@ $(function(){
 
     var studenteIns = {};
     
-    for ( key in studente) {
+    for ( let key in studente) {
    
            if( typeof studenti[0][key] === 'number'){
             studenteIns[key] =  parseInt(prompt("Inserire " + key + " dello studente"));
